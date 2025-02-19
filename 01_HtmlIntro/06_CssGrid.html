@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .containerontainer {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-auto-rows: 200px 200px;
+            grid-gap: 1em;
+            width: fit-content;
+            background: #7977776b;
+        }
+        .item {
+            background: lightblue;
+            padding: 1em;
+            color: darkblue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerontainer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

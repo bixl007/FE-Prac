@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .login {
+        border: 2px solid black;
+        max-width: fit-content;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background: beige;
+        margin: auto;
+        margin-top: 175px;
+      }
+
+      .Header {
+        font-size: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 400;
+      }
+
+      .form {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+      }
+
+      input {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 400;
+        background: rgba(255, 255, 255, 0.455);
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        background: #e0e0a5;
+        cursor: pointer;
+        padding: 10px 40px;
+      }
+      button:hover {
+        background: #e6e6fa;
+      }
+
+      input:hover {
+        background: rgb(230, 212, 200);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="Header">Login</div>
+      <div class="form">
+        <div class="name">
+          Name
+          <input type="text" placeholder="Xyz..." />
+        </div>
+        <div class="phone">
+          Number
+          <input type="number" placeholder="+91 123456789" />
+        </div>
+        <div class="address">
+          Address
+          <input type="text" placeholder="21 Xyz Street" />
+        </div>
+        <div class="gender">
+          Gender
+          <input type="Radio" name="Gender" value="Male" checked />Male
+          <input type="Radio" name="Gender" value="Female" />Female
+        </div>
+        <div class="city">
+          City
+          <input type="text" placeholder="New Delhi" />
+        </div>
+      </div>
+      <button>Submit</button>
+    </div>
+  </body>
+</html>
