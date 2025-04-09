@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #styledDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Styling Example</h1>
+    <div id="styledDiv"></div>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            const div = document.getElementById('styledDiv');
+            div.style.backgroundColor = div.style.backgroundColor === 'lightblue' ? 'lightcoral' : 'lightblue';
+            div.style.width = div.style.width === '200px' ? '300px' : '200px';
+            div.style.height = div.style.height === '200px' ? '300px' : '200px';
+            div.style.borderRadius = div.style.borderRadius === '0px' ? '50%' : '0px';
+        }
+    </script>
+</body>
+</html>

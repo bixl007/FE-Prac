@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p class="para">
+            This is a para
+        </p>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        container.textContent = 'Hello World';
+        newPara = document.createElement('p');
+        newPara.textContent = 'This is a new para';
+        container.appendChild(newPara)
+        const para  = document.getElementsByClassName('para');
+        para.textContent = 'This is a new para';
+    </script>
+
+</body>
+</html>
