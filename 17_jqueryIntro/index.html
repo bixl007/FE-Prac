@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jquery</title>
     <script src="jquery-3.7.1.min.js"></script>
-</head>
-<body>
-    <p>
-        This is a simple paragraph
-    </p>
-    <div id="myId">
-        This is my id Selector
-    </div>
-    <div class="class1">
-        This is my class Selector
-    </div>
+  </head>
+  <body>
+    <p>This is a simple paragraph</p>
+    <div id="myId">This is my id Selector</div>
+    <div class="class1">This is my class Selector</div>
 
     <script>
-        $(document).ready(function() {
-            $("p").css("color", "red");
-            $("#myId").css("color", "green");
-            $(".class1").css("color", "blue");
-        })
+      $(document).ready(function () {
+        $("p").css("color", "red");
+        $("#myId").css("color", "green");
+        $(".class1").css("color", "blue");
+      });
+      let jsonArray = [
+        {
+          name: "Ankit",
+        },
+        {
+          name: "Raj",
+        },
+      ];
+      console.log(jsonArray);
     </script>
-</body>
+  </body>
 </html>
