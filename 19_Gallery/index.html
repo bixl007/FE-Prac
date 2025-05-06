@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery img {
+            cursor: pointer;
+            margin: 5px;
+            max-width: 150px; /* Example size for thumbnails */
+            height: auto;
+        }
+        #lightbox {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            justify-content: center;
+            align-items: center;
+            /* The script will change display to 'block' or 'flex' if you use flex for centering */
+        }
+        #lightbox.active { /* Or use JS to directly set display: flex or display: block */
+            display: flex; 
+        }
+        #fullImage {
+            max-width: 90%;
+            max-height: 90%;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+    </div>
+    <div id="lightbox">
+        <img id="fullImage">
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
